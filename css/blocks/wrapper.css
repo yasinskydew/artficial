@@ -1,0 +1,26 @@
+.wrapper-hero {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1146px;
+    min-height: 634px;
+}
+
+.wrapper-learning {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1146px;
+    min-height: 725px;
+}
+
+.wrapper-services {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 1146px;
+    min-height: 551px;
+}

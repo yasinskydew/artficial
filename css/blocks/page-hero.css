@@ -1,0 +1,54 @@
+.page-hero {
+    background-image: url('../../img/page-hero-bg.png');
+    background-size: 632px 634px;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: bottom;
+}
+.page-hero-text {
+    max-width: 604px;
+}
+.page-hero-text h4 {
+    font-size: 18px;
+    color: var(--color-text-blue);
+    margin-bottom: 10px;
+}
+
+.page-hero-text h1 {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 130%;
+    margin-bottom: 40px;
+}
+
+.page-hero-buttons {
+    display: flex;
+}
+.page-hero-text p {
+    font-weight: 600;
+    line-height: 160%;
+    font-size: 18px;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+.btn-hero-text {
+    margin-right: 20px;
+}
+
+.btn-hero-play {
+    display: flex;
+    align-items: center;
+}
+
+.btn-hero-play img {
+    margin-right: 10px;
+}
+
+.page-hero-img {
+    width: 100px;
+    height: 100px;
+    background-image: url('../../img/page-hero-bg.png');
+    position: relative;
+    z-index: 100;
+}

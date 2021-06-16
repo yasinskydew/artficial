@@ -1,0 +1,26 @@
+.page-services {
+    background-image: url('../../img/page-services-bg.png');
+    background-size: 642px 551px;
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: bottom;
+    padding-top: 130px;
+}
+.page-services-text {
+    max-width: 551px;
+}
+
+.page-services-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+
+.page-services-text p {
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}

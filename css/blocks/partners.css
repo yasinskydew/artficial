@@ -1,0 +1,11 @@
+.partners {
+    margin: 0 auto;
+    max-width: 1146px;
+    padding-top: 197px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners img {
+    height: 59px;
+}

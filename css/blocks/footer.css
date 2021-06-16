@@ -1,0 +1,26 @@
+.footer {
+    margin: auto;
+    max-width: 1146px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 508px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo-text {
+    margin-left: 17px;
+    margin-top: 5px;
+    color: var(--color-text-blue);
+    font-size: 22px;
+}
+
+.header-nav a {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: var(--color-text-white);
+}
