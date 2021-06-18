@@ -2,130 +2,24 @@
 <html lang="en">
 <head>
   <title>Artificial Intelligence</title>
+  <link rel="stylesheet" href="css/style.css">
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="header">
-    <div class="header-logo">
-      <img src="./img/logo.svg">
-      <span class="header-logo-text">Artificial Intelligence</span>
+  <div id="app">
+    <div class="product-image">
+      <img :src="image" >
     </div>
-    <nav class="header-nav">
-      <a href="#home">Home</a>
-      <a href="#home">About</a>
-      <a href="#home">Services</a>
-      <a href="#home">Blog</a>
-      <a href="#home">Contact</a>
-    </nav>
-    <button class="btn">Sign In</button>
-  </header>
-  <section class="page-hero">
-    <div class="wrapper-hero">
-      <div class="page-hero-text">
-        <h4>Next generation platform</h4>
-        <h1>Artificial intelligence & Syber security</h1>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-        <div class="page-hero-buttons">
-          <button class="btn btn-hero-text">Get Started</button>
-          <button class="btn btn-hero-text btn-hero-play">
-            <img src="./img/play-icon.svg">
-            <span>Watch Video</span>
-          </button>
-        </div>
-      </div>
+    <div class="product-info">
+      <h1>{{ product }}</h1>
+      <p v-show="inStock">In stock</p>
+      <p v-if="onSale">On Sale</p>
+      <ul>
+        <li v-for="item in details">{{ item }}</li>
+      </ul>
     </div>
-  </section>
-  <section class="partners">
-    <img src="./img/logoipsum.png" alt="alt">
-    <img src="./img/logoipsum2.png" alt="alt">
-    <img src="./img/logoipsum3.png" alt="alt">
-    <img src="./img/logoipsum4.png" alt="alt">
-  </section>
-  <section class="page-learning">
-    <div class="wrapper-learning">
-      <div class="page-learning-text">
-        <h1>Apply AI, Deep Learning and Data Sciece to solve</h1>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-        <button class="btn-learning-text btn">Learn More</button>
-      </div>
-    </div>
-  </section>
-  <section class="page-services">
-    <div class="wrapper-services">
-      <div class="page-services-text">
-        <h1>What our clients say about our awesome solutions</h1>
-        <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it who do not know.</p>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing .</p>
-        <p>Lorem ipsum is placeholder previewing layouts and visual mockups.</p>
-        <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="footer-info">
-      <img class="logo" src="./img/logo.svg">
-      <span class="company-name">Artificial Intelligence</span>
-      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.</p>
-      <a href="#">
-        <img class="email icon" src="./img/icons/mail.png" alt="">
-        <span>Company@gmail.com.com</span>
-      </a>
-      <a href="#">
-        <img class="phone icon" src="./img/icons/phone.png" alt="">
-        <span>Phone: (064) 332-1233</span>
-      </a>
-      <a href="#">
-        <img class="location icon" src="./img/icons/location.png" alt="">
-        <span>450 Wall Street, USA, New York</span>
-      </a>
-    </div>
-    <div class="footer-menu"> 
-      <span>information</span>
-      <a href="#">New Collection</a>
-      <a href="#">About Store</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Latest News</a>
-      <a href="#">Our Sitemap</a>
-      <a href="#">Orders History</a>
-    </div>
-    <div class="footer-menu">
-      <span>footer menu</span>
-      <a href="#">Instagram profile</a>
-      <a href="#">New Collection</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Latest News</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Purchase Theme</a>
-    </div>
-    <div class="footer-menu">
-      <span>useful links</span>
-      <a href="#">Instagram profile</a>
-      <a href="#">New Collection</a>
-      <a href="#">Contact Us</a>
-      <a href="#">Latest News</a>
-      <a href="#">Terms & Conditions</a>
-      <a href="#">Purchase Theme</a>
-    </div>
-    <div class="footer-about">
-      <span>about the store</span>
-      <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.</p>
-      <p class="footer-company-name">www.company.com</p>
-      <div class="footer-about-social">
-        <img src="./img/icons/facebook.png" alt="">
-        <img src="./img/icons/inst.png" alt="">
-        <img src="./img/icons/twitter.png" alt="">
-        <img src="./img/icons/linked.png" alt="">
-        <img src="./img/icons/youtube.png" alt="">
-      </div>
-      <div class="footer-about-lang">
-        <img class="globus" src="./img/icons/lang.png" alt="">
-        <p class="lang-text">English</p>
-        <img class="cursor" src="./img/icons/cursor.png" alt="">
-      </div>
-    </div>
-  </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
